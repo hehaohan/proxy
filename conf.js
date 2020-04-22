@@ -2,7 +2,7 @@
   // 当前配置的版本（记录在日志中，用于排查问题）
   // 每次修改配置，该值需要增加，否则不会生效。
   // 默认每隔 5 分钟自动下载配置，若想立即验证，可通过隐私模式访问。
-  ver: '110',
+  ver: '111',
 
   // 通过 CDN 加速常用网站的静态资源（实验中）
   static_boost: {
@@ -12,11 +12,16 @@
 
   // 节点配置
   node_map: {
-    'demo': {
+    'default': {
       label: 'Jasons Proxy',
       lines: {
         // 主机:权重
-        'rough-shape-5d08.hehaohan.workers.dev:8443': 1,
+        'morning-poetry-28ec.hehaohan.workers.dev': 1,
+        'broad-bush-67de.hehaohan.workers.dev':1,
+        'silent-butterfly-1beb.hehaohan.workers.dev':1,
+        'floral-wind-9e12.hehaohan.workers.dev':1,
+        'damp-feather-f71c.hehaohan.workers.dev':1,
+        'quiet-violet-618e.hehaohan.workers.dev':1,
       }
     },
     'mysite': {
@@ -35,10 +40,10 @@
 
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
-        //'b.007.workers.dev': 1,
-        //'b.hehe.workers.dev': 1,
-        //'b.lulu.workers.dev': 1,
-        //'b.jsproxy.workers.dev': 1,
+        'b.007.workers.dev': 1,
+        'b.hehe.workers.dev': 1,
+        'b.lulu.workers.dev': 1,
+        'b.jsproxy.workers.dev': 1,
       }
     }
   },
@@ -46,7 +51,7 @@
   /**
    * 默认节点
    */
-  node_default: 'demo',
+  node_default: 'default',
   // node_default: /jsproxy-demo\.\w+$/.test(location.host) ? 'demo-hk' : 'mysite',
 
   /**
@@ -84,6 +89,9 @@
  //   'https://www.pornhub.com/': {
  //     redir: 'https://php.net/'
  //   },
+    'https://www.pornhub.com/': {
+      content: '温馨提示：P站不能上哦，服务器会被封的～'
+    },
     'http://haha.com/': {
       content: 'Hello World'
     },
