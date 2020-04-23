@@ -2,7 +2,7 @@
   // 当前配置的版本（记录在日志中，用于排查问题）
   // 每次修改配置，该值需要增加，否则不会生效。
   // 默认每隔 5 分钟自动下载配置，若想立即验证，可通过隐私模式访问。
-  ver: '111',
+  ver: '112',
 
   // 通过 CDN 加速常用网站的静态资源（实验中）
   static_boost: {
@@ -16,12 +16,21 @@
       label: 'Jasons Proxy',
       lines: {
         // 主机:权重
-        'morning-poetry-28ec.hehaohan.workers.dev': 1,
-        'broad-bush-67de.hehaohan.workers.dev':1,
-        'silent-butterfly-1beb.hehaohan.workers.dev':1,
-        'floral-wind-9e12.hehaohan.workers.dev':1,
-        'damp-feather-f71c.hehaohan.workers.dev':1,
-        'quiet-violet-618e.hehaohan.workers.dev':1,
+        'tight-moon-ab83.hehaohan.workers.dev': 1,
+        'young-queen-f58a.hehaohan.workers.dev': 1,
+        'withered-forest-2958.hehaohan.workers.dev': 1,
+        'shiny-king-12f3.hehaohan.workers.dev': 1,
+        'broad-brook-352a.hehaohan.workers.dev': 1,
+        'small-sun-3c68.hehaohan.workers.dev': 1,
+        'damp-sun-7d10.hehaohan.workers.dev': 1,
+        'silent-cell-cc9c.hehaohan.workers.dev': 1,
+        'empty-disk-9a52.hehaohan.workers.dev': 1,
+        'tiny-sun-9931.hehaohan.workers.dev': 1,
+        'cold-sunset-eb3e.hehaohan.workers.dev': 1,
+        'old-mud-7ab2.hehaohan.workers.dev': 1,
+        'shrill-star-968a.hehaohan.workers.dev': 1,
+        'plain-cake-c1cc.hehaohan.workers.dev': 1,
+        'little-bonus-fd65.hehaohan.workers.dev': 1,
       }
     },
     'mysite': {
@@ -36,7 +45,7 @@
       hidden: true,
       lines: {
         // 收费版（高权重）
-        //'node-cfworker-2.etherdream.com': 4,
+        'node-cfworker-2.etherdream.com': 4,
 
         // 免费版（低权重，分摊一些成本）
         // 每个账号每天 10 万次免费请求，但有频率限制
